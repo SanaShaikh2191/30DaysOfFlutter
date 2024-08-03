@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:thirty_widgets/button.dart';
+// import 'package:thirty_widgets/button.dart';
+import 'package:thirty_widgets/list_grid.dart';
 
 // import 'package:thirty_widgets/rows_col.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primaryColor: Colors.deepOrangeAccent, brightness: Brightness.light),
       debugShowCheckedModeBanner: false,
-      home: const ButtonWidget(),
+      home: const ListGrid(),
     );
   }
 }
