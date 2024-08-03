@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:thirty_widgets/button.dart';
 
-import 'package:thirty_widgets/rows_col.dart';
+// import 'package:thirty_widgets/rows_col.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.deepPurple, brightness: Brightness.dark),
+          primaryColor: Colors.deepOrangeAccent, brightness: Brightness.light),
       debugShowCheckedModeBanner: false,
-      home: const RowsCols(),
+      home: const ButtonWidget(),
     );
   }
 }
