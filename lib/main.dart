@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:thirty_widgets/dismissible.dart';
+import 'package:thirty_widgets/alert.dart';
+// import 'package:thirty_widgets/dismissible.dart';
+// import 'package:thirty_widgets/drawer.dart';
 // import 'package:thirty_widgets/button.dart';
 // import 'package:thirty_widgets/list_grid.dart';
 // import 'package:thirty_widgets/snackbar.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primaryColor: Colors.deepOrangeAccent, brightness: Brightness.light),
       debugShowCheckedModeBanner: false,
-      home: const DismissibleWidget(),
+      home: const AlertWidget(),
     );
   }
 }
