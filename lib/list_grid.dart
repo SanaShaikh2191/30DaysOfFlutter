@@ -64,11 +64,14 @@ class _ListGridState extends State<ListGrid> {
           // ),
           child: GridView.builder(
               itemCount: fruits.length,
-              gridDelegate:
-                  const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2),
               itemBuilder: ((context, index) {
                 return Card(
-                  child: Center(child: Text(fruits[index])),
+                  child: ListTile(
+                    title: Text(fruitsPerson['fruits'][index]),
+                    subtitle: Text(fruitsPerson['name'][index]),
+                  ),
                 );
               })),
         ));
