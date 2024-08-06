@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thirty_widgets/alert.dart';
+import 'package:thirty_widgets/bottonSheet.dart';
 // import 'package:thirty_widgets/dismissible.dart';
 // import 'package:thirty_widgets/drawer.dart';
 // import 'package:thirty_widgets/button.dart';
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.deepOrangeAccent, brightness: Brightness.light),
+          primaryColor: Colors.lightGreen, brightness: Brightness.light),
       debugShowCheckedModeBanner: false,
-      home: const AlertWidget(),
+      home: const BottomSheetWidget(),
     );
   }
 }
