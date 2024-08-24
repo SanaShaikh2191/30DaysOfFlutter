@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thirty_widgets/widgets/day19ui.dart';
+// import 'package:thirty_widgets/widgets/day19ui.dart';
 import 'package:thirty_widgets/widgets/day20ui.dart';
 // import 'package:thirty_widgets/imagepicker.dart';
 // import 'package:thirty_widgets/alert.dart';

@@ -15,7 +15,7 @@ class _LocationWidgetState extends State<LocationWidget> {
   fetchPosition() async {
     bool serviceEnabled;
     LocationPermission permission;
-    String latitude;
+    // String latitude;
     String longitude;
 
     serviceEnabled = await Geolocator.isLocationServiceEnabled();

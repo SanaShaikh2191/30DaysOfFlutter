@@ -10,8 +10,8 @@ class Day19 extends StatefulWidget {
 class _Day19State extends State<Day19> {
   @override
   Widget build(BuildContext context) {
-    var h = MediaQuery.of(context).size.height;
-    var w = MediaQuery.of(context).size.width;
+    // var h = MediaQuery.of(context).size.height;
+    // var w = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Container(
         child: Column(children: [
