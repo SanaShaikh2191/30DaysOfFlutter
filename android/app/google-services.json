@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926025922131",
+    "project_id": "dayss-921fc",
+    "storage_bucket": "dayss-921fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926025922131:android:9e3ed4570cfb14fff338a6",
+        "android_client_info": {
+          "package_name": "com.example.thirty_widgets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs2lpI5bmUuC8pC2vkXla6bqopD4ri0Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
