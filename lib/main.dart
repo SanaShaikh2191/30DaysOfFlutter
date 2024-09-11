@@ -1,9 +1,12 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:thirty_widgets/firebase_options.dart';
-import 'package:thirty_widgets/widgets/bottomNav.dart';
-import 'package:thirty_widgets/widgets/day20ui.dart';
-import 'package:thirty_widgets/widgets/tabbar.dart';
+// import 'package:thirty_widgets/widgets/bottomNav.dart';
+// import 'package:thirty_widgets/widgets/day20ui.dart';
+import 'package:thirty_widgets/widgets/day24.dart';
+import 'package:thirty_widgets/widgets/day25.dart';
+// import 'package:thirty_widgets/widgets/tabbar.dart';
 // import 'package:thirty_widgets/widgets/day19ui.dart';
 // import 'package:thirty_widgets/widgets/day20ui.dart';
 // import 'package:thirty_widgets/imagepicker.dart';
@@ -26,8 +29,8 @@ import 'package:thirty_widgets/widgets/tabbar.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options :DefaultFirebaseOptions.currentPlatform);
-  
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   runApp(const MyApp());
 }
 
@@ -40,7 +43,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primaryColor: Colors.lightGreen, brightness: Brightness.light),
       debugShowCheckedModeBanner: false,
-      home: const Day20(),
+      home: StreamBuilder(
+          stream: FirebaseAuth.instance.authStateChanges(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return DatabaseOptions();
+            } else {
+              return Day24Authentication();
+            }
+          }),
     );
   }
 }
